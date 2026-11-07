@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Pixel Office AI — Virtual AI Corporation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230f172a'/%3E%3Crect x='3' y='4' width='10' height='8' fill='%23f59e0b'/%3E%3Crect x='5' y='1' width='6' height='3' fill='%2338bdf8'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div>
+          <div class="brand-title">PIXEL OFFICE</div>
+          <div class="brand-sub">VIRTUAL AI CORPORATION</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a class="nav-item" href="#/office" data-view="office"><span class="nav-ico">🏢</span><span>Virtual Office</span></a>
+        <a class="nav-item" href="#/dashboard" data-view="dashboard"><span class="nav-ico">📊</span><span>CEO Dashboard</span></a>
+        <a class="nav-item" href="#/command" data-view="command"><span class="nav-ico">🎯</span><span>CEO Command Center</span></a>
+        <a class="nav-item" href="#/employees" data-view="employees"><span class="nav-ico">🧑‍💼</span><span>Employees</span></a>
+        <a class="nav-item" href="#/departments" data-view="departments"><span class="nav-ico">🗂️</span><span>Departments</span></a>
+        <a class="nav-item" href="#/tasks" data-view="tasks"><span class="nav-ico">📋</span><span>Task Manager</span></a>
+        <a class="nav-item" href="#/meetings" data-view="meetings"><span class="nav-ico">🪑</span><span>Meetings</span></a>
+        <a class="nav-item" href="#/reports" data-view="reports"><span class="nav-ico">📄</span><span>Reports</span></a>
+        <a class="nav-item" href="#/connections" data-view="connections"><span class="nav-ico">🔌</span><span>AI Connections</span></a>
+        <a class="nav-item" href="#/settings" data-view="settings"><span class="nav-ico">⚙️</span><span>Settings</span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="connection-mini" id="connection-mini"></div>
+        <div class="sidebar-note">Lokal · localhost · data SQLite</div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Buka menu">☰</button>
+        <div class="topbar-title">
+          <div class="topbar-crumb" id="crumb">Virtual Office</div>
+          <div class="topbar-sub" id="crumb-sub">Kantor pusat perusahaan AI</div>
+        </div>
+        <div class="topbar-right">
+          <div class="chips" id="engine-chips"></div>
+          <button class="company-chip" id="company-chip" title="Profil perusahaan">
+            <span class="company-avatar" id="company-avatar">🏢</span>
+            <span class="company-name" id="company-name">Memuat...</span>
+          </button>
+        </div>
+      </header>
+      <main class="view" id="view" tabindex="-1">
+        <div class="loading-block">
+          <div class="pixel-spinner"></div>
+          <p>Memuat Pixel Office AI...</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="drawer-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
